@@ -53,3 +53,10 @@ DSH host 插件：通过 Telegram 机器人推送通知，并支持在 Telegram 
 - 通过 Telegram Bot API getUpdates 长轮询收发，无需公网地址 / webhook。
 - 数据（授权 chat、审批策略、通知消息 → 会话 id 映射）持久化在插件 data/state.json（映射最多保留最近 500 条）。
 - 会话 id 以 #sess:<id> 标签内嵌在通知消息中；回复消息时会自动用它恢复路由，即使映射表因重启或清理而缺失。
+
+## 配置
+
+首次安装后把 `data/config.example.json` 复制为 `data/config.json` 并填写
+`botToken`（@BotFather 创建）与 `allowedChats`（授权 chat id 列表，空 = 仅本机
+管理员账号）；也可用环境变量 `DSH_TELEGRAM_BOT_TOKEN` 提供 token。二者都不填时
+插件不激活。

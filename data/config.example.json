@@ -1,0 +1,5 @@
+{
+  "botToken": "在此粘贴 @BotFather 创建的 token（或使用环境变量 DSH_TELEGRAM_BOT_TOKEN，二者都不填则插件不激活）",
+  "allowedChats": [],
+  "approvalDefault": "ask"
+}
