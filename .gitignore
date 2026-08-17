@@ -1,0 +1,8 @@
+node_modules/
+data/
+*.tgz
+*.log
+.DS_Store
+dist/
+data/*
+!data/config.example.json

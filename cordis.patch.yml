@@ -1,0 +1,5 @@
+# dsh-telegram-bridge bundle patch: one host row inserted over the web layer.
+# Host-only plugin: no browser half, no dsh.client declaration.
+- insert:
+    - id: telegram-bridge
+      name: 'dsh-telegram-bridge'
